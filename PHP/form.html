@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form</title>
+			<link rel="icon" href="../Images/gehu.jpg">
+			<link rel="stylesheet" type="text/css" href="../CSS/w3.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<style>
+				body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+				a{text-decoration: none}
+			</style>
+		</head>
+	<body>
+	  <div class="w3-bar w3-black w3-card-2">
+	    <a href="../index1.html" class="w3-bar-item w3-button w3-padding-large w3-right">HOME</a>
+	  </div>
+		<div class="w3-card-4 w3-padding-4">
+			<div class="w3-container w3-green w3-center">
+			  <h2>Registration Form</h2>
+			  <h3>Even Semester</h3>
+			  <h4>Session(Jan,2017-June,2017)</h4>
+			</div>
+			<form class="w3-container" action="insert.php" method="post">
+				<div class="w3-row-padding">
+					<div class="w3-half ">
+						<label>Date Of Registration</label>
+						<input class="w3-input" type="date" required name="dor">
+					</div>
+					<div  class="w3-half">
+						<label>Fee Recipt No</label>
+						<input class="w3-input" type="text" placeholder="205453" name="frno" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>Date Of Fee Depositon(Cheque Deposition Date) </label>
+						<input class="w3-input" type="date" name="dofd" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-col">
+						<label>Name Of Student</label>
+						<input class="w3-input" type="text" placeholder="Bart Allen" name="nos" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>University Roll No.</label>
+						<input class="w3-input" type="text" placeholder="1011419" name="uno" required>
+					</div>
+					<div class="w3-half">
+						<label>Enrollment No.</label>
+						<input class="w3-input" type="text" placeholder="PV-14110419" name="eno" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>Course</label>
+						<select class="w3-select" name="course" required>
+						  <option value="" disabled selected>Choose your option</option>
+						  <option value="1">CSE</option>						  
+						  <option value="3">IT </option>
+						  <option value="2">ME </option>
+						  <option value="3">CE </option>
+						  <option value="3">EE </option>
+						  <option value="3">EEE</option>
+						</select>
+					</div>
+					<div class="w3-half">
+						<label>Batch</label>
+						<input class="w3-input" type="text" placeholder="2014" name="batch" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-col s4">
+						<label>Fathers Name</label>
+						<input class="w3-input" type="text" placeholder="Barrey Allen" name="fname" required>
+					</div>
+					<div class="w3-col s4">
+						<label>Ocuupation</label>
+						<input class="w3-input" type="text" name="focc"  required>
+					</div>
+					<div class="w3-col s4">
+						<label>Mobile Number</label>
+						<input class="w3-input" type="text" placeholder="8900098123" name="fmno" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-col s4">
+						<label>Mothers Name</label>
+						<input class="w3-input" type="text" placeholder="Iris West" name="mname" required>
+					</div>
+					<div class="w3-col s4">
+						<label>Ocuupation</label>
+						<input class="w3-input" type="text" name="mocc" required>
+					</div>
+					<div class="w3-col s4">
+						<label>Mobile Number</label>
+						<input class="w3-input" type="text" placeholder="8900098123" name="mmno" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>Guardians Name</label>
+						<input class="w3-input" type="text" placeholder="Cisco Ramon" >
+					</div>
+					<div class="w3-half">
+						<label>Mobile Number</label>
+						<input class="w3-input" type="text" placeholder="8900098123"  >
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>Sibblings in Gehu&nbsp&nbsp&nbsp&nbsp</label>
+						<label>YES</label>
+						<input class="w3-check" type="checkbox">
+						<label>&nbsp&nbsp&nbspNO</label>
+						<input class="w3-check" type="checkbox">
+						<label>(If Any)</label>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>No Of Siblings</label>
+						<input class="w3-input" type="number">
+					</div>
+					<div class="w3-half">
+						<label>Courses Of Sibblings</label>
+						<input class="w3-input" type="text" >
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>Mobile Number</label>
+						<input class="w3-input" type="text" placeholder="8900098123" name="mno">
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-half">
+						<label>Email Id</label>
+						<input class="w3-input" type="email" placeholder="barryallenn@flash.com" name="mail" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-col">
+						<label>Local Addres</label>
+						<input class="w3-input" type="text" name="ladd" required>
+					</div>
+				</div>
+				<div class="w3-row-padding">
+					<div class="w3-col">
+						<label>Permanent Addrress</label>
+						<input class="w3-input" type="text" name="padd" required >
+					</div>
+				</div>
+				<div class="w3-row-padding" style="margin-top: 10px;">
+				<div class="w3-col">
+					<button class="w3-green w3-left w3-round-xxlarge" style="width: 100px;height: 40px;" type="submit">Submit</button>
+					<button class="w3-black w3-right w3-round-xxlarge" style="width: 100px;height: 40px;" type="reset">Reset</button>
+				</div>
+			</div>
+			</form>
+		</div>
+	</body>
+</html>
